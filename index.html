@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise #2: Changing colors</title>
+    <style>
+        #mydiv {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            background-color: blue;
+        }
+    </style>
+</head>
+ 
+<body>
+    <div id="mydiv"></div>
+<button id="color1" class="colors" onclick="before();">Before</button>
+<button id="color2" class="colors" onclick="mid();">Middle</button>
+<button id="color3" class="colors" onclick="after();">After</button>
+ 
+    <script>
+      function before(){
+       document.getElementById('mydiv').style.backgroundColor ='red';
+      }
+ 
+      function mid(){
+       document.getElementById('mydiv').style.backgroundColor ='green';
+      }
+ 
+      function after(){
+       document.getElementById('mydiv').style.backgroundColor ='blue';
+      }
+    </script>
+</body>
+ 
+</html>
